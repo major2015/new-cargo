@@ -15,6 +15,14 @@
   revision = "b91950f658ecd54342d783495e1aadf48a55e967"
 
 [[projects]]
+  digest = "1:88c7eeaf860efb8aba1524660d0170b889fdac3326d0a5b7b7279f557e2707d5"
+  name = "github.com/friendsofgo/errors"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "232bd96a4454b12ba4a012b0e3ba3318775206ca"
+  version = "v0.9.2"
+
+[[projects]]
   digest = "1:80057945464ffb5b0da1f026beb8df0e8dbd098eaf771a349291bed2cd29a83e"
   name = "github.com/fsnotify/fsnotify"
   packages = ["."]
@@ -194,6 +202,30 @@
   version = "v2.5.0"
 
 [[projects]]
+  digest = "1:33740467e3eccb802da4b400c5ddd24413f5f2c663a050b41adb9524358c3f89"
+  name = "github.com/volatiletech/inflect"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "d8a15409218525655fee399863adef5b07cbdebd"
+  version = "v0.0.1"
+
+[[projects]]
+  digest = "1:c5a85081c0f55e04f98b5de621bca9e21726672b316855c977aad0de3e68c463"
+  name = "github.com/volatiletech/sqlboiler"
+  packages = [
+    "boil",
+    "drivers",
+    "importers",
+    "queries",
+    "queries/qm",
+    "queries/qmhelper",
+    "strmangle",
+  ]
+  pruneopts = "UT"
+  revision = "1a2b076b2c8ca9dfefc2541a3b41e21aa0e0f384"
+  version = "v3.7.1"
+
+[[projects]]
   branch = "master"
   digest = "1:100a36e16f77aaad7c9144ab26bcefb92c5b6ebed5b137f935fdc11f541fa5b8"
   name = "golang.org/x/crypto"
@@ -226,6 +258,17 @@
   pruneopts = "UT"
   revision = "23ae387dee1f90d29a23c0e87ee0b46038fbed0e"
   version = "v0.3.3"
+
+[[projects]]
+  branch = "master"
+  digest = "1:918a46e4a2fb83df33f668f5a6bd51b2996775d073fce1800d3ec01b0a5ddd2b"
+  name = "golang.org/x/xerrors"
+  packages = [
+    ".",
+    "internal",
+  ]
+  pruneopts = "UT"
+  revision = "9bdfabe68543c54f90421aeb9a60ef8061b5b544"
 
 [[projects]]
   digest = "1:2a8ce9278a57dba0bca00383d26744e88324c2696ad8538b3f7a69067d02d78c"
@@ -268,6 +311,8 @@
     "github.com/vattle/sqlboiler/queries/qm",
     "github.com/vattle/sqlboiler/randomize",
     "github.com/vattle/sqlboiler/strmangle",
+    "github.com/volatiletech/sqlboiler/boil",
+    "github.com/volatiletech/sqlboiler/queries/qm",
     "gopkg.in/nullbio/null.v6",
   ]
   solver-name = "gps-cdcl"

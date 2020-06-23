@@ -49,6 +49,10 @@
   name = "gopkg.in/nullbio/null.v6"
   version = "6.3.0"
 
+# [[override]]
+#   name = "github.com/go-playground/validator"
+#   version = "10.3.0"
+
 [prune]
   go-tests = true
   unused-packages = true
