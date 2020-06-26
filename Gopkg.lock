@@ -2,6 +2,22 @@
 
 
 [[projects]]
+  digest = "1:9f3b30d9f8e0d7040f729b82dcbc8f0dead820a133b3147ce355fc451f32d761"
+  name = "github.com/BurntSushi/toml"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "3012a1dbe2e4bd1391d42b32f0577cb7bbc7f005"
+  version = "v0.3.1"
+
+[[projects]]
+  digest = "1:7cb4fdca4c251b3ef8027c90ea35f70c7b661a593b9eeae34753c65499098bb1"
+  name = "github.com/cpuguy83/go-md2man"
+  packages = ["md2man"]
+  pruneopts = "UT"
+  revision = "7762f7e404f8416dfa1d9bb6a8c192aa9acb4d19"
+  version = "v1.0.10"
+
+[[projects]]
   branch = "master"
   digest = "1:973f43670b6a99eff066a59ecea17d8d00a3c49e090ed8724202ce478bdd976f"
   name = "github.com/denisenkom/go-mssqldb"
@@ -126,12 +142,28 @@
   version = "v0.9.1"
 
 [[projects]]
+  digest = "1:2ee0f15eb0fb04f918db7c2dcf39745f40d69f798ef171610a730e8a56aaa4fd"
+  name = "github.com/russross/blackfriday"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "d3b5b032dc8e8927d31a5071b56e14c89f045135"
+  version = "v2.0.1"
+
+[[projects]]
   digest = "1:274f67cb6fed9588ea2521ecdac05a6d62a8c51c074c1fccc6a49a40ba80e925"
   name = "github.com/satori/go.uuid"
   packages = ["."]
   pruneopts = "UT"
   revision = "f58768cc1a7a7e77a3bd49e98cdd21419399b6a3"
   version = "v1.2.0"
+
+[[projects]]
+  digest = "1:9421f6e9e28ef86933e824b5caff441366f2b69bb281085b9dca40e1f27a1602"
+  name = "github.com/shurcooL/sanitized_anchor_name"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "7bfe4c7ecddb3666a94b053b422cdd8f5aaa3615"
+  version = "v1.0.0"
 
 [[projects]]
   digest = "1:737edd9913ce17ce195f540502be64dcc2cf14168e610ede7a945cd9bb0a8ce7"
@@ -185,6 +217,17 @@
   version = "v1.2.0"
 
 [[projects]]
+  digest = "1:802f5eb485050d879ebc6fc6ca4ee76111b2d5ea1ecdd0abce862c8701fa7c63"
+  name = "github.com/urfave/cli"
+  packages = [
+    ".",
+    "altsrc",
+  ]
+  pruneopts = "UT"
+  revision = "bfe2e925cfb6d44b40ad3a779165ea7e8aff9212"
+  version = "v1.22.0"
+
+[[projects]]
   digest = "1:43d7c4865c2979011c6e1ca85f374b5e55b71c9b49d0006ca880fb66b085ab77"
   name = "github.com/vattle/sqlboiler"
   packages = [
@@ -231,18 +274,18 @@
   name = "golang.org/x/crypto"
   packages = ["md4"]
   pruneopts = "UT"
-  revision = "70a84ac30bf957c7df57edd1935d2081871515e1"
+  revision = "75b288015ac94e66e3d6715fb68a9b41bf046ec2"
 
 [[projects]]
   branch = "master"
-  digest = "1:328ca567cfbcad62096874ab5819f9fc79a75b9566fa16202546b68b8bc9ca86"
+  digest = "1:de18db9b6b884884bbb43eafaee3c72a06c8d4ac69d87411c52b5801a5e814f7"
   name = "golang.org/x/sys"
   packages = [
     "internal/unsafeheader",
     "unix",
   ]
   pruneopts = "UT"
-  revision = "981b61492c3565ea113dc1621ca30ef897df5586"
+  revision = "ddb9806d33aed8dbaac1cd6f1cba58952e87f933"
 
 [[projects]]
   digest = "1:a2c690dfee42801a26a0e88f69206feca8a3c2437fd476d84767468d7d7708e9"
@@ -305,13 +348,14 @@
     "github.com/lib/pq",
     "github.com/pkg/errors",
     "github.com/spf13/viper",
+    "github.com/urfave/cli",
+    "github.com/urfave/cli/altsrc",
     "github.com/vattle/sqlboiler/bdb/drivers",
     "github.com/vattle/sqlboiler/boil",
     "github.com/vattle/sqlboiler/queries",
     "github.com/vattle/sqlboiler/queries/qm",
     "github.com/vattle/sqlboiler/randomize",
     "github.com/vattle/sqlboiler/strmangle",
-    "github.com/volatiletech/sqlboiler/boil",
     "github.com/volatiletech/sqlboiler/queries/qm",
     "gopkg.in/nullbio/null.v6",
   ]

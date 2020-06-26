@@ -1,22 +1,26 @@
-package cargo_db
+package sass
 
 import (
-	"strings"
-
 	"github.com/gin-gonic/gin"
 	"github.com/urfave/cli"
 	"github.com/urfave/cli/altsrc"
+	"strings"
 )
 
+// Configuration defines wrap configurations
 type Configuration interface {
 	String(string) string
 	Bool(name string) bool
 	Int(name string) int
 }
 
+// IsDevMode defines of dev mode
 var IsDevMode = false
+
+// SessionsKeyValue defines a k-v for session
 var SessionsKeyValue = []byte("32-byte-long-auth-key-123-45-712")
 
+// Initialize function that initialize sass project configurations
 func Initialize() *cli.App {
 	IsDevMode = 0 != strings.Compare(gin.Mode(), "release")
 
@@ -117,7 +121,7 @@ func Initialize() *cli.App {
 		},
 	}
 
-	app.Before = altsrc.InitInputSourceWithContect(
+	app.Before = altsrc.InitInputSourceWithContext(
 		app.Flags,
 		altsrc.NewYamlSourceFromFlagFunc("config"),
 	)

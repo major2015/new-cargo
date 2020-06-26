@@ -1,4 +1,4 @@
-package cargo_db
+package sass
 
 import (
 	"database/sql"
@@ -25,6 +25,6 @@ type Subscription = cargo_db.Subscription
 
 var Subscriptions = cargo_db.Subscriptions
 
-func ConnectDB(c Configuration) *sql.DB {
+// func ConnectDB(c Configuration) *sql.DB {
 
-}
+// }
