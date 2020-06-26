@@ -1,10 +1,12 @@
 package sass
 
 import (
+	"strings"
+
 	"github.com/gin-gonic/gin"
+	log "github.com/major2015/new-cargo/log"
 	"github.com/urfave/cli"
 	"github.com/urfave/cli/altsrc"
-	"strings"
 )
 
 // Configuration defines wrap configurations
@@ -24,7 +26,14 @@ var SessionsKeyValue = []byte("32-byte-long-auth-key-123-45-712")
 func Initialize() *cli.App {
 	IsDevMode = 0 != strings.Compare(gin.Mode(), "release")
 
-	app := cli.NewApp()
+	app := &cli.App{
+		Name:  "cargo-sass",
+		Usage: "fight the loneliness!",
+		Action: func() error {
+			log.Get().Infoln("Initializing configurations")
+			return nil
+		},
+	}
 	app.Flags = []cli.Flag{
 		altsrc.NewIntFlag(cli.IntFlag{
 			Name:  "port",
