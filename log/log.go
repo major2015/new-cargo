@@ -24,6 +24,7 @@ func LoadTranslations(things map[string]interface{}) {
 	formatter.TimestampFormat = `Jan 02 15:04:05`
 	formatter.FullTimestamp = true
 	log.Formatter = &TranslationFormatter{formatter}
+	translations, _ = Flatten(things)
 }
 
 // TranslationFormatter implementation from prefixed.TextFormatter
@@ -60,7 +61,7 @@ func init() {
 
 // Get returns log
 func Get() *logrus.Logger {
-	switch strings.ToLower(os.Getenv("TYK_LOGLEVEL")) {
+	switch strings.ToLower(os.Getenv("CARGO_LOGLEVEL")) {
 	case "error":
 		log.Level = logrus.ErrorLevel
 	case "warn":

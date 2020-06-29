@@ -3,7 +3,7 @@ no-context = "true"
 pkgname = "cargo_db"
 output = "models"
 
-[postgres]
+[psql]
   dbname  = "new-cargo"
   host    = "localhost"
   port    = "5432"

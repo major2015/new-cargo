@@ -12,10 +12,10 @@ type FlatMap map[string]string
 func Flatten(data map[string]interface{}) (flatMap FlatMap, err error) {
 	flatMap = make(FlatMap)
 	for k, v := range data {
-		err :=	flatten(flatMap, k, reflect.ValueOf(v))
+		err := flatten(flatMap, k, reflect.ValueOf(v))
 		if err != nil {
 			return nil, err
-		} 
+		}
 	}
 	return
 }
@@ -51,7 +51,7 @@ func flatten(result FlatMap, prefix string, v reflect.Value) (err error) {
 		err = flattenStruct(result, prefix, v)
 		if err != nil {
 			return err
-		}	
+		}
 	case reflect.Invalid:
 		result[prefix] = ""
 	default:
